@@ -21,7 +21,7 @@ body {
 }
 
 .navbar {
-  background: rgba(0,0,0,0.7);
+  background: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(10px);
   transition: 0.4s;
 }
@@ -56,8 +56,13 @@ body {
 }
 
 @keyframes fadeIn {
-  from {opacity:0;}
-  to {opacity:1;}
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 .light-mode {
@@ -73,6 +78,7 @@ body {
   background: #f1f1f1;
   color: black;
 }
+
 /* ===== PROJECT SECTION ===== */
 #projects {
   background: radial-gradient(circle at top right, #0f172a, #111827);
@@ -95,24 +101,28 @@ body {
   border-radius: 25px;
   overflow: hidden;
   backdrop-filter: blur(12px);
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   transition: transform 0.5s ease, box-shadow 0.5s ease;
   cursor: pointer;
   animation: fadeInUp 1s ease forwards;
-  min-height: 350px; /* <-- Increased height for all cards */
+  min-height: 350px;
+  /* <-- Increased height for all cards */
 }
 
 /* Big Card Styling */
 .project-card.big-card {
-  min-height: 500px; /* <-- Make big card taller */
+  min-height: 500px;
+  /* <-- Make big card taller */
 }
 
 /* Project Image */
 .project-card img {
   width: 100%;
-  height: 100%;      /* fill the card */
-  object-fit: cover; /* ensure image covers card nicely */
+  height: 100%;
+  /* fill the card */
+  object-fit: cover;
+  /* ensure image covers card nicely */
   display: block;
   border-radius: 25px;
   transition: 0.5s;
@@ -122,7 +132,8 @@ body {
 .project-card .overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,245,255,0.15); /* slightly stronger overlay */
+  background: rgba(0, 245, 255, 0.15);
+  /* slightly stronger overlay */
   backdrop-filter: blur(15px);
   color: white;
   opacity: 0;
@@ -184,23 +195,28 @@ body {
 /* Tilt hover effect */
 .project-card:hover {
   transform: scale(1.03) rotateY(2deg);
-  box-shadow: 0 20px 40px rgba(0,245,255,0.4);
+  box-shadow: 0 20px 40px rgba(0, 245, 255, 0.4);
 }
 
 /* Smaller Project Cards */
 .col-lg-4 .project-card {
   margin-bottom: 20px;
-  min-height: 300px; /* increased slightly for small cards */
+  min-height: 300px;
+  /* increased slightly for small cards */
 }
 
 /* Responsive adjustments */
 @media (max-width: 992px) {
   .project-card {
-    min-height: 300px; /* adjust for tablets */
+    min-height: 300px;
+    /* adjust for tablets */
   }
+
   .project-card.big-card {
-    min-height: 400px; /* adjust big card for tablets */
+    min-height: 400px;
+    /* adjust big card for tablets */
   }
+
   .project-card:hover {
     transform: none;
     box-shadow: none;
@@ -210,17 +226,17 @@ body {
 /* ===== Premium Circular Skills ===== */
 
 .skill-box {
-  background: rgba(255,255,255,0.05);
+  background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
   padding: 30px;
   border-radius: 20px;
   transition: 0.4s;
-  border: 1px solid rgba(255,255,255,0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .skill-box:hover {
   transform: translateY(-8px);
-  box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
 }
 
 .skill-icon {
@@ -287,9 +303,17 @@ body {
 
 /* Floating animation */
 @keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-12px); }
-  100% { transform: translateY(0px); }
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 
@@ -318,11 +342,12 @@ body {
   margin-bottom: 10px;
 }
 
-/* ===== HERO SECTION ===== */
+/* ========================================= HERO SECTION ====================================== */
 #home {
   background: radial-gradient(circle at center, #0f172a, #111827);
   position: relative;
   overflow: hidden;
+
 }
 
 .hero-title {
@@ -340,15 +365,28 @@ body {
 }
 
 @keyframes gradientMove {
-  0% { filter: hue-rotate(0deg); }
-  100% { filter: hue-rotate(360deg); }
+  0% {
+    filter: hue-rotate(0deg);
+  }
+
+  100% {
+    filter: hue-rotate(360deg);
+  }
 }
 
 /* Floating animation for text */
 @keyframes floatText {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0px); }
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 /* Hero Buttons */
@@ -357,20 +395,21 @@ body {
   font-size: 18px;
   border-radius: 50px;
   transition: 0.4s;
-  box-shadow: 0 5px 15px rgba(0,245,255,0.4);
+  box-shadow: 0 5px 15px rgba(0, 245, 255, 0.4);
 }
 
 .btn-hero:hover {
   transform: scale(1.1);
-  box-shadow: 0 8px 30px rgba(0,245,255,0.7);
+  box-shadow: 0 8px 30px rgba(0, 245, 255, 0.7);
 }
 
 /* Social Icons */
 .hero-socials {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 23px;
   margin-top: 25px;
+  padding-left: 25px;
 }
 
 .social-icon {
@@ -397,12 +436,15 @@ body {
 
 .social-icon:hover {
   color: #00f5ff;
+  text-shadow: 0 0 10px #00f5ff, 0 0 15px #ff00f5;
+  transform: scale(1.1);
 }
+
 
 /* Hero container floating effect */
 .hero-content {
   backdrop-filter: blur(10px);
-  background: rgba(255,255,255,0.05);
+  background: rgba(255, 255, 255, 0.05);
   padding: 40px;
   border-radius: 20px;
 }
@@ -429,8 +471,8 @@ body {
   border-radius: 20px;
   overflow: hidden;
   backdrop-filter: blur(10px);
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   cursor: pointer;
 }
@@ -438,7 +480,7 @@ body {
 /* Tilt Hover Effect */
 .project-card:hover {
   transform: scale(1.05) rotateY(3deg);
-  box-shadow: 0 20px 40px rgba(0,245,255,0.4);
+  box-shadow: 0 20px 40px rgba(0, 245, 255, 0.4);
 }
 
 /* Project Image */
@@ -506,7 +548,7 @@ body {
   }
 }
 
-/* ===== FOOTER ===== */
+/* ======================================= FOOTER Section ====================================== */
 #footer {
   background: linear-gradient(135deg, #0f172a, #111827);
   position: relative;
@@ -525,10 +567,10 @@ body {
 .footer-card {
   position: relative;
   z-index: 1;
-  background: rgba(255,255,255,0.05);
+  background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(20px);
   border-radius: 25px;
-  border: 1px solid rgba(255,255,255,0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 40px;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   animation: floatCard 6s ease-in-out infinite;
@@ -536,7 +578,7 @@ body {
 
 .footer-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 15px 40px rgba(0,245,255,0.3);
+  box-shadow: 0 15px 40px rgba(0, 245, 255, 0.3);
 }
 
 /* Gradient headings */
@@ -571,14 +613,16 @@ body {
 
 .social-links a:hover {
   color: #00f5ff;
-  transform: scale(1.2);
+  text-shadow: 0 0 10px #00f5ff, 0 0 15px #ff00f5;
+  transform: scale(1.1);
 }
+
 
 /* Newsletter / Contact Form */
 #footerForm input,
 #footerForm textarea {
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 12px;
   padding: 10px 15px;
   color: white;
@@ -589,7 +633,7 @@ body {
 #footerForm textarea:focus {
   border-color: #00f5ff;
   box-shadow: 0 0 15px #00f5ff;
-  background: rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.1);
   outline: none;
 }
 
@@ -609,8 +653,15 @@ body {
 
 /* Floating animation */
 @keyframes floatCard {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-8px); }
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
 }
 
 /* Responsive adjustments */
@@ -618,9 +669,11 @@ body {
   .footer-card {
     padding: 30px 20px;
   }
+
   .footer-card .gradient-text {
     font-size: 28px;
   }
+
   .social-links a {
     margin-right: 12px;
   }
@@ -653,7 +706,7 @@ body {
 /* Skill Card Hover Glow */
 #skills .skill-card {
   position: relative;
-  background: rgba(255,255,255,0.05);
+  background: rgba(255, 255, 255, 0.05);
   border-radius: 20px;
   padding: 20px;
   margin-bottom: 20px;
@@ -687,20 +740,20 @@ body {
 
 /* Hero Section Container */
 .hero-container {
-  background: rgba(255,255,255,0.05);
+  background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(15px);
   border-radius: 25px;
   padding: 40px;
   transition: all 0.5s ease;
-  border: 1px solid rgba(255,255,255,0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* Hover Effect */
 .hero-container:hover {
   transform: scale(1.05);
   box-shadow: 0 0 25px #00f5ff, 0 0 30px #ff00f5, 0 0 35px #00ff88;
-  border: 1px solid rgba(0,255,255,0.4);
-  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(0, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 /* ===== NAVBAR ===== */
@@ -708,9 +761,9 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(255,255,255,0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   padding: 15px 0;
   transition: all 0.4s ease;
   z-index: 9999;
@@ -718,8 +771,8 @@ body {
 
 /* Navbar scrolled effect */
 .navbar-sticky.scrolled {
-  background: rgba(0,0,0,0.9);
-  box-shadow: 0 8px 30px rgba(0,255,255,0.2);
+  background: rgba(0, 0, 0, 0.9);
+  box-shadow: 0 8px 30px rgba(0, 255, 255, 0.2);
   transform: translateY(-2px);
 }
 
@@ -768,7 +821,7 @@ body {
 
 /* Hamburger */
 .navbar-toggler {
-  border: 1px solid rgba(255,255,255,0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .navbar-toggler-icon {
@@ -790,4 +843,65 @@ body {
   .nav-link {
     margin: 10px 0;
   }
+}
+
+/* ===== EDUCATION SECTION ===== */
+
+#education {
+  background: linear-gradient(135deg, #0f172a, #020617);
+}
+
+.education-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  transition: 0.4s;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+.education-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 0 20px rgba(0, 245, 255, 0.4);
+}
+
+.edu-icon {
+  font-size: 40px;
+  color: #00f5ff;
+  margin-bottom: 15px;
+}
+
+.edu-college {
+  color: #cbd5f5;
+  font-size: 14px;
+}
+
+.edu-year {
+  display: inline-block;
+  margin: 8px 0;
+  padding: 4px 12px;
+  background: #00f5ff;
+  color: black;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.edu-desc {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.naukri-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.naukri-icon {
+  width: 132px;
+  height: 40px;
+  object-fit: cover;
+  filter: brightness(0) invert(1);
+  /* converts logo to white */
 }
